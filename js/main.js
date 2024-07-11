@@ -74,3 +74,32 @@ $(document).ready(function() {
       }
   }
 });
+
+
+ScrollReveal().reveal('.col-md-4', {
+  duration: 1000,
+  delay: 200,
+  origin: 'left', 
+  distance: '50px',
+  easing: 'ease-in-out', 
+  reset: true
+});
+
+
+ScrollReveal().reveal('.col-md-6', {
+  duration: 1000,
+  delay: 300,
+  origin: 'bottom', 
+  distance: '50px',
+  easing: 'ease-in-out', 
+  reset: true
+});
+
+ScrollReveal().reveal('.col-md-2', {
+  duration: 1000,
+  delay: 400,
+  origin: 'top', 
+  distance: '50px',
+  easing: 'ease-in-out', 
+  reset: true
+});
