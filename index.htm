@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/master.css">
+    <title>FIXIT</title>
+</head>
+
+<body class="light">
+
+
+
+    <main>
+
+        <header id="header">
+            <nav class="navbar navbar-expand-lg bg-white shadow-sm w-100 fixed-top">
+                <div class="container">
+                    <a class="navbar-brand mb-2" href="#"><img src="images/logo.png" alt="" srcset=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item position-relative">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <ul class="ul-nav position-absolute list-unstyled bg-white p-3 rounded shadow-sm">
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">multi page</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">static intro</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">single page</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">admin dashboard</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item position-relative">
+                                <a class="nav-link" href="#">pages</a>
+                                <ul class="ul-nav position-absolute list-unstyled bg-white p-3 rounded shadow-sm">
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">SHORTCODES & WIDGETs</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">about</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">shop</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">timetable</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">events</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">team</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">servises</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">cominjsoon</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">faq</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">404</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="nav-item try">
+                                <a class="nav-link" href="#">features</a>
+                                <ul
+                                    class="ul-nav2 start-50 translate-middle-x mt-3 gap-5 position-absolute list-unstyled bg-white p-3 rounded shadow-sm">
+                                    <li class="">
+                                        <h2 class="fw-bold h5">headers</h2>
+                                        <ul class="list-unstyled ul-2">
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type1</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type2</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type3</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type4</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="border-start ps-3">
+                                        <h2 class="fw-bold h5 text-uppercase">headers</h2>
+                                        <ul class="list-unstyled ul-2">
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type1</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type2</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type3</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type4</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="border-start ps-3">
+                                        <h2 class="fw-bold h5 text-uppercase">headers</h2>
+                                        <ul class="list-unstyled ul-2">
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type1</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type2</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type3</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type4</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="border-start ps-3">
+                                        <h2 class="fw-bold h5 text-uppercase">headers</h2>
+                                        <ul class="list-unstyled ul-2">
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type1</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type2</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type3</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type4</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="border-start ps-3">
+                                        <h2 class="fw-bold h5 text-uppercase">headers</h2>
+                                        <ul class="list-unstyled ul-2">
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type1</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type2</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type3</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type4</a></li>
+                                            <li class="text-uppercase fw-bold py-3"><a href=""
+                                                    class="text-decoration-none">headrs type5</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item position-relative">
+                                <a class="nav-link" href="#">gallery</a>
+                                <ul class="ul-nav position-absolute list-unstyled bg-white p-3 rounded shadow-sm">
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">SHORTCODES & WIDGETs</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">about</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">shop</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">timetable</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">events</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">team</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">servises</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">cominjsoon</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">faq</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">404</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item position-relative">
+                                <a class="nav-link" href="#">blog</a>
+                                <ul class="ul-nav position-absolute list-unstyled bg-white p-3 rounded shadow-sm">
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">SHORTCODES & WIDGETs</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">about</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">shop</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">timetable</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">events</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">team</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">servises</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">cominjsoon</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">faq</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">404</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item position-relative">
+                                <a class="nav-link" href="#">contact</a>
+                                <ul class="ul-nav position-absolute list-unstyled bg-white p-3 rounded shadow-sm">
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">SHORTCODES & WIDGETs</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">about</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">shop</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">timetable</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">events</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">team</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">servises</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">cominjsoon</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">faq</a></li>
+                                    <li class="text-uppercase fw-bold py-3"><a href=""
+                                            class="text-decoration-none">404</a></li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                        <div class="">
+                            <button class="btn px-4 py-1 rounded-0">SCHEDULE FREE <br> DEVICE DROP IN</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section id="home" class="bg-image">
+            <div class="container">
+                <div class="text d-flex justify-content-center align-items-center flex-column ">
+                    <h3 class="text-white">Any Computer Problems?</h3>
+                    <h2 class="text-white fw-bolder">WE WILL HELP</h2>
+                    <button class="btn px-3 py-2 mt-3 fw-bold">ALL SERVICES</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="info mt-2 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="text-center py-3">
+                            <h5 class="fw-bolder">CALL US 24 / 7</h5>
+                            <p>+201288642158</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="text-center py-3">
+                            <h5 class="fw-bolder">EMAIL ADDRESS</h5>
+                            <p>elrosyomair@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="text-center py-3">
+                            <h5 class="fw-bolder">OPEN HOURS</h5>
+                            <p>Daily 8:00-19:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="my-5 py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="mb-md-0 mb-5">
+                            <img src="images/after.jpg" class="w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <h3 class="m-0">Welcome!</h3>
+                            <h2 class="h1">ABOUT US</h2>
+                            <p class="lh-lg">The highly-trained technicians have many years of experience with all laptop,
+                                notebook, macbook and desktop computer repairs. We pride our company on honesty and the
+                                good relationships forged through customer satisfaction. We service all makes and models
+                                of MAC laptops, Imac, PC laptops, notebooks and most desktops: Dell, Sony, IBM, HP,
+                                Acer, Apple, etc.
+
+                                ABOUT PAGE</p>
+                                <button class="btn px-4 py-2 rounded-0">ABOUT PAGE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servises" class="py-5">
+                <div class="container">
+                        <h2 class="text-center">SERVISES</h2>
+                        <div class="row position-relative z-2">
+                                <div class="col-md-6 col-lg-4  mb-3">
+                                        <div class="box text-center">
+                                        <i class="my-4 fa-solid fa-desktop"></i>
+                                        <h4>Desctop Repair</h4>
+                                        <p class="m-0">With our Laptop Repair, you’ll be thrilled you came to us for your repair. Bring us whatever you need us to fix.</p>
+                                        
+                                        </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4  mb-3">
+                                        <div class="box text-center">
+                                        <i class="my-4 fa-solid fa-tablet-screen-button"></i>
+                                        <h4>Desctop Repair</h4>
+                                        <p class="m-0">With our Laptop Repair, you’ll be thrilled you came to us for your repair. Bring us whatever you need us to fix.</p>
+                                        
+                                        </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4  mb-3">
+                                        <div class="box text-center">
+                                        <i class="my-4 fa-solid fa-mobile-screen-button"></i>
+                                        <h4>Desctop Repair</h4>
+                                        <p class="m-0">With our Laptop Repair, you’ll be thrilled you came to us for your repair. Bring us whatever you need us to fix.</p>
+                                        
+                                        </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4  mb-3">
+                                        <div class="box text-center">
+                                        <i class="my-4 fa-solid fa-laptop"></i>
+                                        <h4>Desctop Repair</h4>
+                                        <p class="m-0">With our Laptop Repair, you’ll be thrilled you came to us for your repair. Bring us whatever you need us to fix.</p>
+                                        
+                                        </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4  mb-3">
+                                        <div class="box text-center">
+                                        <i class="my-4 fa-solid fa-sliders"></i>
+                                        <h4>Desctop Repair</h4>
+                                        <p class="m-0">With our Laptop Repair, you’ll be thrilled you came to us for your repair. Bring us whatever you need us to fix.</p>
+                                        
+                                        </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4  mb-3">
+                                        <div class="box text-center">
+                                        <i class="my-4 fa-regular fa-lightbulb"></i>
+                                        <h4>Desctop Repair</h4>
+                                        <p class="m-0">With our Laptop Repair, you’ll be thrilled you came to us for your repair. Bring us whatever you need us to fix.</p>
+                                        
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+        <section id="blog" class=" text-center py-5">
+                <div class="container">
+                        <div class="heading">
+                                <h2 class="">BLOG POSTS</h2>
+                                <p>Read our recent blogs to always be updated with our news</p>
+                        </div>
+                        <div class="row">
+                                <div class="col-md-4 md-mb-0 mb-4">
+                                        <div class="border box">
+                                                <div class="image position-relative">
+                                                        <img class="w-100" src="images/side-image.jpg" alt="">
+                                                </div>
+                                                <div class="text p-3">
+                                                        <h5 class="my-2">A Note About Windows 10 Upgrades</h5>
+                                                        <p>You would find our team super-fast and active, who put work first, to deliver to you on time.</p>
+                                                </div>
+                                                <div class="admin d-flex justify-content-between">
+                                                        <div class="d-flex flex-column border w-100 py-2">
+                                                                <i class="fa-solid fa-user-tie"></i>
+                                                                <span class="text-uppercase">admin</span>
+                                                        </div>
+                                                        <div class="d-flex flex-column border w-100 py-2">
+                                                                <i class="fa-solid fa-user-tie"></i>
+                                                                <span class="text-uppercase">admin</span>
+                                                        </div>
+                                                        <div class="d-flex flex-column border w-100 py-2">
+                                                                <i class="fa-solid fa-user-tie"></i>
+                                                                <span class="text-uppercase">admin</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 md-mb-0 mb-4">
+                                        <div class="border box">
+                                                <div class="image position-relative">
+                                                        <img class="w-100" src="images/blog.jpg" alt="">
+                                                </div>
+                                                <div class="text p-3">
+                                                        <h5 class="my-2">Protect yourself from the WannaCrypt</h5>
+                                                        <p>Our professional team of movers is trained to provide you with awesome services.</p>
+                                                </div>
+                                                <div class="admin d-flex justify-content-between">
+                                                        <div class="d-flex flex-column border w-100 py-2">
+                                                                <i class="fa-solid fa-user-tie"></i>
+                                                                <span class="text-uppercase">admin</span>
+                                                        </div>
+                                                        <div class="d-flex flex-column border w-100 py-2">
+                                                                <i class="fa-solid fa-user-tie"></i>
+                                                                <span class="text-uppercase">admin</span>
+                                                        </div>
+                                                        <div class="d-flex flex-column border w-100 py-2">
+                                                                <i class="fa-solid fa-user-tie"></i>
+                                                                <span class="text-uppercase">admin</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 md-mb-0 mb-4">
+                                        <div class="border box">
+                                                <div class="image position-relative">
+                                                        <img class="w-100" src="images/recent_post3.jpg" alt="">
+                                                </div>
+                                                <div class="text p-3">
+                                                        <h5 class="my-2">Google Takeout!…And possibly photos</h5>
+                                                        <p>Often when the price is less, the quality goes down, but that’s not the case with us.</p>
+                                                </div>
+                                                <div class="admin d-flex justify-content-between">
+                                                        <div class="d-flex flex-column border w-100 py-2">
+                                                                <i class="fa-solid fa-user-tie"></i>
+                                                                <span class="text-uppercase">admin</span>
+                                                        </div>
+                                                        <div class="d-flex flex-column border w-100 py-2">
+                                                                <i class="fa-solid fa-user-tie"></i>
+                                                                <span class="text-uppercase">admin</span>
+                                                        </div>
+                                                        <div class="d-flex flex-column border w-100 py-2">
+                                                                <i class="fa-solid fa-user-tie"></i>
+                                                                <span class="text-uppercase">admin</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+        <section id="choose" class="py-5 my-4">
+                <div class="">
+                        <div class="row gx-0 align-items-center">
+                                <div class="col-md-6">
+                                        <div class="overflow-hidden mb-md-0 mb-5">
+                                                <img src="images/half_image.jpg" class="w-100" alt="">
+                                        </div>
+                                </div>
+                                <div class="col-md-6">
+                                        <div class="text container">
+                                                <h3 class="m-0">Know Why</h3>
+                                                <h2 class="h1">CHOOSE US</h2>
+                                                <div class="toggle">
+                                                        <h5 class="fw-bold p-3 position-relative">QUALITY <span class="position-absolute">^</span></h5>
+                                                        <div class="p-2 active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem facere doloremque ut dolores laudantium nihil at, repudiandae est numquam fuga tempora totam sequi quidem saepe officiis sint beatae, magni fugit.</div>
+                                                </div>
+                                                <div class="toggle">
+                                                        <h5 class="fw-bold p-3 position-relative">EXPERIENCE <span class="position-absolute">^</span></h5>
+                                                        <div class="p-2">Biltong bacon pancetta corned beef filet mignon andouille cow burgdoggen. Pork chop beef ball tip shank, brisket kielbasa turkey andouille biltong alcatra filet mignon.</div>
+                                                </div>
+                                                <div class="toggle">
+                                                        <h5 class="fw-bold p-3 position-relative">GUARANTEES <span class="position-absolute">^</span></h5>
+                                                        <div class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At nobis omnis delectus, asperiores quo obcaecati et iste corporis necessitatibus tempora aspernatur doloribus. Ut deleniti commodi dicta distinctio sit enim quidem!</div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+
+        <section id="slide" class="py-4 my-4">
+                <div class="container overflow-hidden py-5">
+                        <div class="swiper-container w-100 position-relative">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide text-center justify-content-center align-items-center d-flex flex-column">
+                                            <img src="images/01.jpg" class="rounded-circle mb-2" alt="">
+                                            <h3 class="text-capitalize">kARL JREAVES</h3>
+                                            <p class="text-uppercase cli mb-1">CLIENT</p>
+                                            <i class="fa-solid fa-quote-left mb-2"></i>
+                                            <p class="w-75">
+                                                Randy came out to my house. He was on time, extremely pleasant, and got the job done. My dog liked him too…… I would definitely hire this company again. Price was fair, service was great, and tech – well I could adopt him!
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide text-center justify-content-center align-items-center d-flex flex-column">
+                                            <img src="images/02.jpg" class="rounded-circle mb-2" alt="">
+                                            <h3 class="text-capitalize">scot maxwell</h3>
+                                            <p class="text-uppercase cli mb-1">CLIENT</p>
+                                            <i class="fa-solid fa-quote-left mb-2"></i>
+                                            <p class="w-75">
+                                                Randy came out to my house. He was on time, extremely pleasant, and got the job done. My dog liked him too…… I would definitely hire this company again. Price was fair, service was great, and tech – well I could adopt him!
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide text-center justify-content-center align-items-center d-flex flex-column">
+                                            <img src="images/01.jpg" class="rounded-circle mb-2" alt="">
+                                            <h3 class="text-capitalize">kARL JREAVES</h3>
+                                            <p class="text-uppercase cli mb-1">CLIENT</p>
+                                            <i class="fa-solid fa-quote-left mb-2"></i>
+                                            <p class="w-75">
+                                                Randy came out to my house. He was on time, extremely pleasant, and got the job done. My dog liked him too…… I would definitely hire this company again. Price was fair, service was great, and tech – well I could adopt him!
+                                        </p>
+                                    </div>
+                                    <!-- Add more slides as needed -->
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination position-absolute b"></div>
+                                <!-- Add Navigation -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                </div>
+        </section>
+
+        <section id="contact" class="position-relative py-5">
+                <div class="container">
+                        <div class="heading text-white text-center">
+                                <h2 class="">APPOINTMENT</h2>
+                                <p>Read our recent blogs to always be updated with our news</p>
+                        </div>
+                        <form action="" class="position-relative z-1">
+                                <div class="row align-items-center">
+                                      <div class="col-md-4">
+                                        <input type="text" oninput="valdate(this)" id="nameInput" class="form-control my-3" placeholder="Name">
+                                      </div>
+                                        <div class="col-md-4">
+                                                <input type="text" oninput="valdate(this)" id="phoneInput" class="form-control my-3" placeholder="phoneNumber">
+                                        </div>
+                                       <div class="col-md-2">
+                                        <select id="time"  class="form-select my-3 " name="time">
+                                                <option value="" disabled="" selected="" data-default="">Time</option>
+                                                <option value="12:00">12:00</option>
+                                                <option value="1:00">1:00</option>
+                                                <option value="2:00">2:00</option>
+                                                <option value="3:00">3:00</option>
+                                                <option value="4:00">4:00</option>
+                                        </select>
+                                       </div>
+                                       <div class="col-md-2">
+                                               <select id="date"  class="form-select my-3 " name="date">
+                                                       <option value="" disabled="" selected="" data-default="">Date</option>
+                                                       <option value="12/7">12/7</option>
+                                                       <option value="1/7">1/7</option>
+                                                       <option value="2/7">2/7</option>
+                                                       <option value="3/7">3/7</option>
+                                                       <option value="4/7">4/7</option>
+                                               </select>
+
+                                       </div>
+                                       
+                                </div>
+                                <textarea class="form-control my-3 w-100" oninput="valdate(this)" id="messageInput" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                <p class="error py-2 text-danger text-capitalize">Please feild inputs</p>
+                                <div class="text-center">
+                                <button class="btn px-3 py-2 mt-3 fw-bold mx-auto">SCHEDULE FREE <br> DEVICE DROP IN</button>
+                                </div>        
+                        </form>
+                </div>
+        </section>
+
+        <section id="faq" class="py-5">
+                <div class="container py-4">
+                        <h2 class="text-center mb-5">FAQ</h2>
+                        <div class="row">
+                                <div class="col-md-4 mb-md-0 mb-4">
+                                        <div class="box pb-4 text-center border">
+                                               <div class="text px-2">
+                                                        <i class="fa-solid fa-comments translate-middle-y rounded-circle d-flex justify-content-center align-items-center mx-auto"></i>
+                                                <h3 class="">Do you offer onsite repairs?</h3>
+                                                <p>Yes. Please feel free to bring your old electronic in so they will be recycled properly</p>
+                                        </div>
+                                        <i class="fa-solid fa-chevron-down down"></i>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 mb-md-0 mb-4">
+                                        <div class="box pb-4 text-center border">
+                                               <div class="text px-2">
+                                                        <i class="fa-solid fa-comments translate-middle-y rounded-circle d-flex justify-content-center align-items-center mx-auto"></i>
+                                                <h3 class="">Do you offer onsite repairs?</h3>
+                                                <p>Yes. Please feel free to bring your old electronic in so they will be recycled properly</p>
+                                        </div>
+                                        <i class="fa-solid fa-chevron-down down"></i>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 mb-md-0 mb-4">
+                                        <div class="box pb-4 text-center border">
+                                               <div class="text px-2">
+                                                        <i class="fa-solid fa-comments translate-middle-y rounded-circle d-flex justify-content-center align-items-center mx-auto"></i>
+                                                <h3 class="">Do you offer onsite repairs?</h3>
+                                                <p>Yes. Please feel free to bring your old electronic in so they will be recycled properly</p>
+                                        </div>
+                                        <i class="fa-solid fa-chevron-down down"></i>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+        <footer class="position-relative overflow-hidden">
+                <div class="row info position-relative z-1 bg-opacity-25 bg-secondary">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="text-center py-3">
+                            <h5 class="fw-bolder">CALL US 24 / 7</h5>
+                            <p>+201288642158</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="text-center py-3">
+                            <h5 class="fw-bolder">EMAIL ADDRESS</h5>
+                            <p>elrosyomair@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="text-center py-3">
+                            <h5 class="fw-bolder">OPEN HOURS</h5>
+                            <p>Daily 8:00-19:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container py-5">
+                        <div class="row position-relative z-1">
+                                <div class="col-md-4">
+                                        <div class="text-center">
+                                                <h3 class="text-uppercase text-white my-3">servises</h3>
+                                                <ul class="text-secondary list-unstyled">
+                                                        <li class="border-bottom border-secondary border-opacity-50 py-2">Desctop Repair</li>
+                                                        <li class="border-bottom border-secondary border-opacity-50 py-2">Tablet Repair</li>
+                                                        <li class="border-bottom border-secondary border-opacity-50 py-2">Smartphone Repair</li>
+                                                        <li class="border-bottom border-secondary border-opacity-50 py-2">Laptop Repair</li>
+                                                        <li class=" py-2">Hardware Repair</li>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="col-md-4">
+                                        <div class="text-center
+                                        ">
+                                                <img src="images/logo.png" class="my-3" alt="">
+                                                <p class="lh-lg">The highly-trained technicians have many years of experience with all laptop, notebook and desktop computer repair.</p>
+                                                <div class="text-secondary"><i class="fa-solid fa-location-dot"></i> 	46 streat javaScript, alsharqia, Zaqziq</div>
+                                                <div class="text-secondary my-3"><i class="fa-solid fa-phone"></i> <a class="text-decoration-none" href="tel:01288642158">+201288642158</a></div>
+                                                <div class="text-secondary"><i class="fa-solid fa-envelope"></i> <a class="text-decoration-none" href="mailto:elrosyomair@gmail.com">elrosyomair@gmail.com</a></div>
+                                                <div class="social d-flex justify-content-center align-items-center mt-3">
+                                                        <a class="mx-2" href="https://www.facebook.com/omair.rajeh" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f rounded-circle d-flex justify-content-center align-items-center facebook"></i></a>
+                                                        <a class="mx-2" href="https://www.linkedin.com/in/omair-mohammed-%F0%9F%87%B5%F0%9F%87%B8-4120b2283" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in rounded-circle d-flex justify-content-center align-items-center linkd"></i></a>
+                                                        <a class="mx-2" href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-plus-g rounded-circle d-flex justify-content-center align-items-center google"></i></a>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-md-4">
+                                        <div class="text-center">
+                                                <h3 class="text-uppercase text-white my-3">NEWSLETTER</h3>
+                                                <p class="lh-lg">Enter your email address here always to be updated. We promise not to spam!</p>
+                                                <input type="text" class="form-control my-3" placeholder="Email Address">
+                                                <button class=" px-4 py-2 rounded-0">SUBSCRIBE</button>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+        </footer>
+
+        <section class="copy py-2 text-center bg-secondary-subtle">
+                <p>&copy; 2024 <span class="fw-bold">Omair</span> Mohammed</p>
+        </section>
+    </main>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+        integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
