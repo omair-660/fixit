@@ -86,8 +86,27 @@ p,span{
     height: 70vh;
 }
 
-#home {
+#home .one{
     background-image: url("../images/slide02.jpg");
+}
+#home .tow{
+    background-image: url("../images/recent_post3.jpg");
+    position: relative;
+}
+
+#home .three{
+    background-image: url("../images/09.jpg");
+    position: relative;
+}
+#home .tow::after, #home .three::after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
 }
 
 #home .text {
@@ -325,7 +344,9 @@ p,span{
     bottom: -45px;
     color: var(--main-color);
 }
-
+#home .swiper-horizontal>.swiper-pagination-bullets,#home .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+bottom: 20%;
+}
 .swiper-pagination-bullet-active {
     background: var(--main-color);
 }
