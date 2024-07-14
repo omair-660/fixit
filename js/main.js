@@ -109,7 +109,7 @@ var swiper1 = new Swiper('.swiper-container-1', {
 });
 
 var swiper2 = new Swiper('.swiper-container-2', {
-  effect: 'flip', // 'fade', 'cube', 'coverflow', 'flip'
+  effect: 'flip', // 'fade', 'cube', 'coverflow', 'flip',more...
   navigation: {
       nextEl: '.swiper-container-2 .swiper-button-next',
       prevEl: '.swiper-container-2 .swiper-button-prev',
@@ -119,4 +119,59 @@ var swiper2 = new Swiper('.swiper-container-2', {
       clickable: true,
   },
   loop: false, 
+});
+const boxColorOffcet = $(".box-color").outerWidth(true)
+const boxColorOpenOffcet = $(".box-color .open").outerWidth(true)
+$("document").ready(function(){
+  $(".load").fadeOut(1000,function(){
+    $("#home").css({"transform": "scale(1)","transition":"all 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0s","opacity":"1"});
+  })
+  $("body").css("overflow", "visible")
+$(".box-color").css({"right": -boxColorOffcet + "px" , "transition":"all 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0s"})
+
+$(".open").on("click", function(){
+  if ($(".box-color").css("right") === "0px") {
+    $(".box-color").css("right", -boxColorOffcet  + "px");
+  } else {
+    $(".box-color").css("right", "0px");
+  }
+});
+
+$(".red").on("click", function(){
+  $("body").removeClass("second-color").addClass("third-color");
+  localStorage.setItem("currentColor", "third-color");
+});
+
+$(".purple").on("click", function(){
+  $("body").removeClass("third-color").addClass("second-color");
+  localStorage.setItem("currentColor", "second-color");
+});
+
+$(".green").on("click", function(){
+  $("body").removeClass("second-color third-color");
+  localStorage.setItem("currentColor", "");
+});
+
+$(".dark-mode").on("click", function(){
+  $("body").removeClass("light").addClass("dark");
+  localStorage.setItem("currentColor", "dark");
+});
+
+$(".light-mode").on("click", function(){
+  $("body").removeClass("dark").addClass("light");
+  localStorage.setItem("currentColor", "light");
+});
+
+var currentColor = localStorage.getItem("currentColor");
+
+if (currentColor === "second-color") {
+  $("body").addClass("second-color");
+} else if (currentColor === "third-color") {
+  $("body").addClass("third-color");
+} else if (currentColor === "dark") {
+  $("body").addClass("dark");
+} else if (currentColor === "light") {
+  $("body").addClass("light");
+}
+
 });

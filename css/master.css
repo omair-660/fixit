@@ -5,6 +5,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     background-color: var(--body);
+    overflow: hidden;
 }
 
 :root {
@@ -85,7 +86,10 @@ p,span{
     background-repeat: no-repeat;
     height: 70vh;
 }
-
+#home{
+    transform: scale(0.01);
+    opacity: 0;
+}
 #home .one{
     background-image: url("../images/slide02.jpg");
 }
@@ -449,4 +453,50 @@ footer .social i{
 }
 nav.navbar.navbar-expand-lg.bg-white.shadow-sm.w-100.fixed-top{
     background: var(--bg-mode)!important;
+}
+.load{
+    z-index: 99999;
+    display: flex;
+}
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    border: 4px solid #0000;
+    border-radius: 50%;
+    border-right-color: #25b09b;
+    animation: l15 1s infinite linear;
+  }
+  .loader::before,
+  .loader::after {    
+    content: "";
+    grid-area: 1/1;
+    margin: 2px;
+    border: inherit;
+    border-radius: 50%;
+    animation: l15 2s infinite;
+  }
+  .loader::after {
+    margin: 8px;
+    animation-duration: 3s;
+  }
+  @keyframes l15{ 
+    100%{transform: rotate(1turn)}
+  }
+  .change-color div{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+  }
+  .change-color div.green{
+      background-color: #54be73;
+}
+.change-color div.purple{
+    background-color: #947dc8;
+}
+.change-color div.red{
+    background-color: #f64b4e;
+}
+.box-color{
+    right: 0;
 }
