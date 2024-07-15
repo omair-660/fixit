@@ -24,25 +24,37 @@
 </head>
 
 <body class="light">
-
+        <a id="button"></a>
 <div class="load position-fixed  start-0 top-0 w-100 vh-100 bg-black justify-content-center align-items-center">
         <div class="loader"></div> 
 </div>
 <div class="box-color position-fixed top-50 bg-black p-2 rounded-end-2 z-3">
-        <div class="open bg-black text-light position-absolute end-100 top-50">open</div>
-        <p>Change Color</p>
-        <div class="d-flex gap-2 change-color">
+        <div class="open bg-black text-light position-absolute end-100 top-50"><i class="fa fa-paint-brush d-flex justify-content-center align-items-center" aria-hidden="true"></i></div>
+        <p class="text-white">Change Color:</p>
+        <div class="d-flex gap-2 change-color mb-2">
                 <div class="green"></div>
                 <div class="purple"></div>
                 <div class="red"></div>
         </div>
-        <div class="mode">
-                <div class="dark-mode p-2 text-white bg-black">dark</div>
-                <div class="light-mode bg-white text-black p-2">light</div>
+        <p class="text-white">Color scheme:</p>
+        <div class="mode d-flex my-3 justify-content-center">
+                <div class="dark-mode mx-1 p-2 t bg-dark text-light">dark</div>
+                <div class="light-mode mx-1 bg-light-subtle bg-white p-2">light</div>
+        </div>
+
+        <p class="text-white">Boxed Patterns:</p>
+        <div class="checkbox-wrapper-36">
+                <input id="toggle-36" class="patern" type="checkbox">
+                <label for="toggle-36"></label>
+              </div>
+        <div class="my-3 flex-wrap pattern-box">
+                <div class="dark-pattern mx-1 t bg-dark text-light"></div>
+                <div class="light-pattern mx-1 bg-light-subtle bg-white"></div>
+                <div class="gray-pattern mx-1 text-white mt-2"></div>
         </div>
 </div>
 
-    <main>
+    <main class="">
 
         <header id="header">
             <nav class="navbar navbar-expand-lg bg-white shadow-sm w-100 fixed-top">
@@ -277,7 +289,7 @@
                             <div class="container">
                                 <div class="text d-flex justify-content-center align-items-center flex-column">
                                     <h3 class="text-white">Multi-Brand</h3>
-                                    <h2 class="text-white fw-bolder">DEVICE SERVICE</h2>
+                                    <h2 class="text-white fw-bolder text-center">DEVICE SERVICE</h2>
                                     <button class="btn px-3 py-2 mt-3 fw-bold">ABOUT US</button>
                                 </div>
                             </div>
@@ -286,7 +298,7 @@
                             <div class="container">
                                 <div class="text d-flex justify-content-center align-items-center flex-column">
                                     <h3 class="text-white">The Same Day</h3>
-                                    <h2 class="text-white fw-bolder">PHONE REPAIR</h2>
+                                    <h2 class="text-white fw-bolder text-center">PHONE REPAIR</h2>
                                     <button class="btn px-3 py-2 mt-3 fw-bold">ADVANTAGES</button>
                                 </div>
                             </div>
@@ -302,19 +314,19 @@
         <section class="info  mt-2 border-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 left">
                         <div class="text-center py-3">
                             <h5 class="fw-bolder">CALL US 24 / 7</h5>
                             <p>+201288642158</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 bottom">
                         <div class="text-center py-3">
                             <h5 class="fw-bolder">EMAIL ADDRESS</h5>
                             <p>elrosyomair@gmail.com</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 right">
                         <div class="text-center py-3">
                             <h5 class="fw-bolder">OPEN HOURS</h5>
                             <p>Daily 8:00-19:00</p>
@@ -327,12 +339,12 @@
         <section id="about" class="my-5 py-5wow animate__animated animate__fadeInUp">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-6">
+                    <div class="col-md-6 left">
                         <div class="mb-md-0 mb-5">
                             <img src="images/after.jpg" class="w-100" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 right">
                         <div>
                             <h3 class="m-0">Welcome!</h3>
                             <h2 class="h1">ABOUT US</h2>
@@ -354,7 +366,7 @@
                 <div class="container">
                         <h2 class="text-center">SERVISES</h2>
                         <div class="row position-relative z-2">
-                                <div class="col-md-6 col-lg-4  mb-3">
+                                <div class="col-md-6 bottom col-lg-4  mb-3">
                                         <div class="box text-center">
                                         <i class="my-4 fa-solid fa-desktop"></i>
                                         <h4>Desctop Repair</h4>
@@ -362,7 +374,7 @@
                                         
                                         </div>
                                 </div>
-                                <div class="col-md-6 col-lg-4  mb-3">
+                                <div class="col-md-6 bottom col-lg-4  mb-3">
                                         <div class="box text-center">
                                         <i class="my-4 fa-solid fa-tablet-screen-button"></i>
                                         <h4>Desctop Repair</h4>
@@ -370,7 +382,7 @@
                                         
                                         </div>
                                 </div>
-                                <div class="col-md-6 col-lg-4  mb-3">
+                                <div class="col-md-6 bottom col-lg-4  mb-3">
                                         <div class="box text-center">
                                         <i class="my-4 fa-solid fa-mobile-screen-button"></i>
                                         <h4>Desctop Repair</h4>
@@ -378,7 +390,7 @@
                                         
                                         </div>
                                 </div>
-                                <div class="col-md-6 col-lg-4  mb-3">
+                                <div class="col-md-6 bottom col-lg-4  mb-3">
                                         <div class="box text-center">
                                         <i class="my-4 fa-solid fa-laptop"></i>
                                         <h4>Desctop Repair</h4>
@@ -386,7 +398,7 @@
                                         
                                         </div>
                                 </div>
-                                <div class="col-md-6 col-lg-4  mb-3">
+                                <div class="col-md-6 bottom col-lg-4  mb-3">
                                         <div class="box text-center">
                                         <i class="my-4 fa-solid fa-sliders"></i>
                                         <h4>Desctop Repair</h4>
@@ -394,7 +406,7 @@
                                         
                                         </div>
                                 </div>
-                                <div class="col-md-6 col-lg-4  mb-3">
+                                <div class="col-md-6 bottom col-lg-4  mb-3">
                                         <div class="box text-center">
                                         <i class="my-4 fa-regular fa-lightbulb"></i>
                                         <h4>Desctop Repair</h4>
@@ -413,7 +425,7 @@
                                 <p>Read our recent blogs to always be updated with our news</p>
                         </div>
                         <div class="row">
-                                <div class="col-md-4 md-mb-0 mb-4">
+                                <div class="col-md-4 left md-mb-0 mb-4">
                                         <div class="border box">
                                                 <div class="image position-relative">
                                                         <img class="w-100" src="images/side-image.jpg" alt="">
@@ -438,7 +450,7 @@
                                                 </div>
                                         </div>
                                 </div>
-                                <div class="col-md-4 md-mb-0 mb-4">
+                                <div class="col-md-4 md-mb-0 mb-4 bottom">
                                         <div class="border box">
                                                 <div class="image position-relative">
                                                         <img class="w-100" src="images/blog.jpg" alt="">
@@ -463,7 +475,7 @@
                                                 </div>
                                         </div>
                                 </div>
-                                <div class="col-md-4 md-mb-0 mb-4">
+                                <div class="col-md-4 md-mb-0 mb-4 right">
                                         <div class="border box">
                                                 <div class="image position-relative">
                                                         <img class="w-100" src="images/recent_post3.jpg" alt="">
@@ -495,12 +507,12 @@
         <section id="choose" class="py-5 my-4">
                 <div class="">
                         <div class="row gx-0 align-items-center">
-                                <div class="col-md-6">
+                                <div class="col-md-6 left">
                                         <div class="overflow-hidden mb-md-0 mb-5">
                                                 <img src="images/half_image.jpg" class="w-100" alt="">
                                         </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 right">
                                         <div class="text container">
                                                 <h3 class="m-0">Know Why</h3>
                                                 <h2 class="h1">CHOOSE US</h2>
@@ -565,15 +577,15 @@
         <section id="contact" class="position-relative py-5">
                 <div class="container">
                         <div class="heading text-white text-center">
-                                <h2 class="">APPOINTMENT</h2>
+                                <h2 class="text-white">APPOINTMENT</h2>
                                 <p>Read our recent blogs to always be updated with our news</p>
                         </div>
                         <form action="" class="position-relative z-1">
                                 <div class="row align-items-center">
-                                      <div class="col-md-4">
+                                      <div class="col-md-4 top">
                                         <input type="text" oninput="valdate(this)" id="nameInput" class="form-control my-3" placeholder="Name">
                                       </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-4 top">
                                                 <input type="text" oninput="valdate(this)" id="phoneInput" class="form-control my-3" placeholder="phoneNumber">
                                         </div>
                                        <div class="col-md-2">
@@ -599,7 +611,7 @@
                                        </div>
                                        
                                 </div>
-                                <textarea class="form-control my-3 w-100" oninput="valdate(this)" id="messageInput" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                <textarea class="form-control my-3 w-100 bottom" oninput="valdate(this)" id="messageInput" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                                 <p class="error py-2 text-danger text-capitalize">Please feild inputs</p>
                                 <div class="text-center">
                                 <button class="btn px-3 py-2 mt-3 fw-bold mx-auto">SCHEDULE FREE <br> DEVICE DROP IN</button>
@@ -609,7 +621,7 @@
         </section>
 
         <section id="faq" class="py-5">
-                <div class="container py-4">
+                <div class="container py-4 left">
                         <h2 class="text-center mb-5">FAQ</h2>
                         <div class="row">
                                 <div class="col-md-4 mb-md-0 mb-4">
@@ -622,7 +634,7 @@
                                         <i class="fa-solid fa-chevron-down down"></i>
                                         </div>
                                 </div>
-                                <div class="col-md-4 mb-md-0 mb-4">
+                                <div class="col-md-4 mb-md-0 mb-4 bottom">
                                         <div class="box pb-4 text-center border">
                                                <div class="text px-2">
                                                         <i class="fa-solid fa-comments translate-middle-y rounded-circle d-flex justify-content-center align-items-center mx-auto"></i>
@@ -632,7 +644,7 @@
                                         <i class="fa-solid fa-chevron-down down"></i>
                                         </div>
                                 </div>
-                                <div class="col-md-4 mb-md-0 mb-4">
+                                <div class="col-md-4 mb-md-0 mb-4 right">
                                         <div class="box pb-4 text-center border">
                                                <div class="text px-2">
                                                         <i class="fa-solid fa-comments translate-middle-y rounded-circle d-flex justify-content-center align-items-center mx-auto"></i>
@@ -648,19 +660,19 @@
 
         <footer class="position-relative overflow-hidden">
                 <div class="row info position-relative z-1 bg-opacity-25 bg-secondary">
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 left">
                         <div class="text-center py-3">
                             <h5 class="fw-bolder">CALL US 24 / 7</h5>
                             <p>+201288642158</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 bottom">
                         <div class="text-center py-3">
                             <h5 class="fw-bolder">EMAIL ADDRESS</h5>
                             <p>elrosyomair@gmail.com</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 right">
                         <div class="text-center py-3">
                             <h5 class="fw-bolder">OPEN HOURS</h5>
                             <p>Daily 8:00-19:00</p>
@@ -669,7 +681,7 @@
                 </div>
                 <div class="container py-5">
                         <div class="row position-relative z-1">
-                                <div class="col-md-4">
+                                <div class="col-md-4 left">
                                         <div class="text-center">
                                                 <h3 class="text-uppercase text-white my-3">servises</h3>
                                                 <ul class="text-secondary list-unstyled">
@@ -681,7 +693,7 @@
                                                 </ul>
                                         </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 bottom">
                                         <div class="text-center
                                         ">
                                                 <img src="images/logo.png" class="my-3" alt="">
@@ -696,7 +708,7 @@
                                                 </div>
                                         </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 right">
                                         <div class="text-center">
                                                 <h3 class="text-uppercase text-white my-3">NEWSLETTER</h3>
                                                 <p class="lh-lg">Enter your email address here always to be updated. We promise not to spam!</p>
@@ -708,10 +720,13 @@
                     </div>
         </footer>
 
-        <section class="copy py-2 text-center bg-secondary-subtle">
+        <section class="copy py-2 text-center">
                 <p>&copy; 2024 <span class="fw-bold">Omair</span> Mohammed</p>
         </section>
     </main>
+    
+
+      
 
 
     <script src="https://unpkg.com/scrollreveal"></script>
