@@ -456,8 +456,12 @@ footer .social i{
  a{
      text-decoration: none;
  }
- .navbar-nav .nav-link.active, .navbar-nav .nav-link.show,.nav-link:focus, .nav-link:hover  {
+ .navbar-nav .nav-link.active, .navbar-nav .nav-link.show,.nav-link:focus, .nav-link:hover,.tags a,.tags p { 
     color: var(--main-color);
+}
+
+.tags a:hover{
+    color: #fff;
 }
 .nav-link {
     font-size: 16px;
@@ -666,4 +670,12 @@ nav.navbar.navbar-expand-lg.bg-white.shadow-sm.w-100.fixed-top{
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: #555; 
+}
+
+
+ .linkk{
+    color: white;
+}
+.linkk:hover {
+    color: var(--main-color);
 }
